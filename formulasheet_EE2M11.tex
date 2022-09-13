@@ -1,0 +1,76 @@
+\documentclass[12pt]{article}
+\usepackage[dvipsnames,table]{xcolor}
+\usepackage{amsmath}
+\usepackage{bbding}
+\usepackage{amssymb}
+\usepackage{makecell}
+\usepackage[a4paper, margin=0.7in, bottom=25mm, top=16mm, headsep=0mm]{geometry}
+\usepackage{import}
+\usepackage{pdfpages}
+\usepackage{transparent}
+\usepackage{xcolor}
+\usepackage{minted}
+\usepackage{hyperref}
+\usepackage{longtable}
+
+\newcommand{\incfig}[2][1]{%
+    \def\svgwidth{#1\columnwidth}
+    \import{./figures/}{#2.pdf_tex}
+}
+
+\newcommand{\icol}[1]{% inline column vector
+  \begin{bmatrix}#1\end{bmatrix}%
+}
+
+\newenvironment{amatrix}[1]{%
+	\left\[\begin{array}{@{}*{#1}{c}|c@{}}
+}{%
+  \end{array}\right\]
+}
+
+\usepackage{xcolor}
+\hypersetup{
+    colorlinks,
+    linkcolor={red!50!black},
+    citecolor={blue!50!black},
+    urlcolor={blue!80!black}
+}
+
+\def\arraystretch{1.3}
+%\pdfsuppresswarningpagegroup=1
+
+\title{Formula Sheet EE2M11}
+\author{MaybE\_Tree}
+\date{2022-09-07}
+
+\begin{document}
+\maketitle
+%\tableofcontents
+%\vfill
+%\begin{center}
+%	\textit{
+%	}
+%\end{center}
+%\pagebreak
+
+\begin{longtable}{lll}
+	\makecell[l]
+	{
+		Triangle Inequality 
+	} &
+	\makecell[l]
+	{
+		$$ 
+		\begin{cases}
+			|z_1 \pm z_2| \leq |z_1|+|z_2| \\
+			|z_1 \pm z_2| \geq |z_1|-|z_2| \\
+		\end{cases}
+		$$ 
+	} &
+	\textit{\makecell[l]
+		{
+	}} \\
+\end{longtable}
+
+\end{document}
+

@@ -1,0 +1,9 @@
+*.sw*
+*.aux
+*.log
+*.fls
+*.out
+*.toc
+*.gz
+*.vim
+*_latexmk
