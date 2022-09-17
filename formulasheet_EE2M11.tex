@@ -13,6 +13,9 @@
 \usepackage{hyperref}
 \usepackage{longtable}
 
+\newcommand{\nosize}[1]{\raisebox{0pt}[0pt][0pt]{\makebox[0pt]{#1}}}
+\newcommand{\nosizep}[1]{\makebox[0pt]{#1}}
+
 \newcommand{\incfig}[2][1]{%
     \def\svgwidth{#1\columnwidth}
     \import{./figures/}{#2.pdf_tex}
@@ -60,17 +63,194 @@
 	} &
 	\makecell[l]
 	{
-		$$ 
+		$
 		\begin{cases}
 			|z_1 \pm z_2| \leq |z_1|+|z_2| \\
 			|z_1 \pm z_2| \geq |z_1|-|z_2| \\
 		\end{cases}
-		$$ 
+		$
+	} &
+	\textit{\makecell[l]
+		{
+	}} \\
+
+	\makecell[l]
+	{
+		Limits to Infinity
+	} &
+	\makecell[l]
+	{
+		$
+		\begin{cases}
+			\lim\limits_{z \to z_0} f(z) = \infty \iff \lim\limits_{z \to z_0} \cfrac{1}{f(z)} = 0\\
+			\lim\limits_{z \to \infty} f(z) = L \iff \lim\limits_{z \to 0} f \left(\cfrac{1}{z}\right) = L\\
+		\end{cases}
+		$
+	} &
+	\textit{\makecell[l]
+		{
+		L must be finite, maybe??
+	}} \\
+
+	\makecell[l]
+	{
+		Cauchy-Riemann
+	} &
+	\makecell[l]
+	{
+		\vspace{-3mm}\\
+		\begin{tabular}{cccc}
+			CR1 & u && v 
+			\vspace{2mm}\\
+			x &
+			$ \cfrac{du}{dx} $ & &
+			$ \cfrac{dv}{dx} $ \\
+			&&
+			\nosize{\rotatebox[origin=c]{-45}{\color{red}$==$}}%
+			\nosize{\rotatebox[origin=c]{45}{\color{blue}$-=$}}%
+			&\\
+			y &
+			$ \cfrac{du}{dy} $  & &
+			$ \cfrac{dv}{dy} $ \\
+		\end{tabular}
+	} &
+	\textit{\makecell[l]
+		{
+	}} \\
+
+	\makecell[l]
+	{
+	} &
+	\makecell[l]
+	{
+		$
+		$
+	} &
+	\textit{\makecell[l]
+		{
+	}} \\
+
+	\makecell[l]
+	{
+	} &
+	\makecell[l]
+	{
+		$
+		$
+	} &
+	\textit{\makecell[l]
+		{
+	}} \\
+
+	\makecell[l]
+	{
+	} &
+	\makecell[l]
+	{
+		$
+		$
+	} &
+	\textit{\makecell[l]
+		{
+	}} \\
+
+	\makecell[l]
+	{
+	} &
+	\makecell[l]
+	{
+		$
+		$
+	} &
+	\textit{\makecell[l]
+		{
+	}} \\
+
+	\makecell[l]
+	{
+	} &
+	\makecell[l]
+	{
+		$
+		$
+	} &
+	\textit{\makecell[l]
+		{
+	}} \\
+
+	\makecell[l]
+	{
+	} &
+	\makecell[l]
+	{
+		$
+		$
+	} &
+	\textit{\makecell[l]
+		{
+	}} \\
+
+	\makecell[l]
+	{
+	} &
+	\makecell[l]
+	{
+		$
+		$
+	} &
+	\textit{\makecell[l]
+		{
+	}} \\
+
+	\makecell[l]
+	{
+	} &
+	\makecell[l]
+	{
+		$
+		$
+	} &
+	\textit{\makecell[l]
+		{
+	}} \\
+
+	\makecell[l]
+	{
+	} &
+	\makecell[l]
+	{
+		$
+		$
+	} &
+	\textit{\makecell[l]
+		{
+	}} \\
+
+	\makecell[l]
+	{
+	} &
+	\makecell[l]
+	{
+		$
+		$
+	} &
+	\textit{\makecell[l]
+		{
+	}} \\
+
+	\makecell[l]
+	{
+	} &
+	\makecell[l]
+	{
+		$
+		$
 	} &
 	\textit{\makecell[l]
 		{
 	}} \\
 \end{longtable}
+
 
 \end{document}
 
