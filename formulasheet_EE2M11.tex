@@ -12,6 +12,7 @@
 \usepackage{minted}
 \usepackage{hyperref}
 \usepackage{longtable}
+\usepackage{units}
 
 \newcommand{\nosize}[1]{\raisebox{0pt}[0pt][0pt]{\makebox[0pt]{#1}}}
 \newcommand{\nosizep}[1]{\makebox[0pt]{#1}}
@@ -57,6 +58,20 @@
 %\pagebreak
 
 \begin{longtable}{lll}
+	\makecell[l]
+	{
+		Principal Argument
+	} &
+	\makecell[l]
+	{
+		$
+		-\pi < \theta \leq \pi
+		$
+	} &
+	\textit{\makecell[l]
+		{
+	}} \\
+
 	\makecell[l]
 	{
 		Triangle Inequality 
@@ -116,14 +131,39 @@
 	} &
 	\textit{\makecell[l]
 		{
+			For \\
+			$f(x,y) = u(x+y) + i v(x, y)$ \\
 	}} \\
 
 	\makecell[l]
 	{
+		Harmonic Check
 	} &
 	\makecell[l]
 	{
 		$
+			\cfrac{\delta^2 u}{\delta x^2} +
+			\cfrac{\delta^2 u}{\delta y^2} = 0
+			\implies
+			\cfrac{\iint\limits_D f(z)}{\text{Area}(D)}= f(z_c)
+		$ 
+	} &
+	\textit{\makecell[l]
+		{
+			For \\
+			$f(x,y) = u(x+y) + i v(x, y)$ \\
+			Around a circular domain $D$ \\
+			with centerpointn $ z_c $ 
+	}} \\
+
+	\makecell[l]
+	{
+		Exponential Function 
+	} &
+	\makecell[l]
+	{
+		$
+		e^z = e^x ( \cos y + i \sin y)
 		$
 	} &
 	\textit{\makecell[l]
@@ -132,26 +172,21 @@
 
 	\makecell[l]
 	{
+		Trig Functions
 	} &
 	\makecell[l]
 	{
 		$
+		\begin{cases}
+			\sin z = \cfrac{1}{2i}  \left( e^{iz} - e^{-iz} \right) \\
+			\cos z = \cfrac{1}{2}  \left( e^{iz} + e^{-iz} \right) \\
+		\end{cases}
 		$
 	} &
-	\textit{\makecell[l]
-		{
-	}} \\
-
-	\makecell[l]
-	{
-	} &
-	\makecell[l]
-	{
-		$
-		$
-	} &
-	\textit{\makecell[l]
-		{
+	\textit{\makecell[l]{
+		All the familiar identities apply, \\
+		but range is no longer
+		$ \pm 1 $ .
 	}} \\
 
 	\makecell[l]
@@ -250,6 +285,38 @@
 		{
 	}} \\
 \end{longtable}
+
+\begin{tabular}{c|ccccc}
+	&
+	$0$ &
+	$\nicefrac{1}{6} \pi$ &
+	$\nicefrac{1}{4} \pi$ &
+	$\nicefrac{1}{3} \pi$ &
+	$\nicefrac{1}{2} \pi$ \\
+	\hline
+
+	$\sin$ &
+	$0$ &
+	$ \nicefrac{1}{2} $ &
+	$ \nicefrac{\sqrt{2}}{2} $ &
+	$ \nicefrac{\sqrt{3}}{2} $ &
+	$1$ \\
+
+	$\cos$ &
+	$1$ &
+	$ \nicefrac{\sqrt{3}}{2} $ &
+	$ \nicefrac{\sqrt{2}}{2} $ &
+	$ \nicefrac{1}{2} $ &
+	$0$ \\
+	
+	$\tan$ &
+	$0$ &
+	$ \nicefrac{\sqrt{3}}{3} $ &
+	$ 1 $ &
+	$ \sqrt{3} $ &
+	??? \\
+	
+\end{tabular}
 
 
 \end{document}
