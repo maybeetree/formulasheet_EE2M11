@@ -14,6 +14,16 @@
 \usepackage{longtable}
 \usepackage{units}
 
+% small log already defined
+\newcommand{\Log}{\operatorname{Log}}
+% small arg already defined
+\newcommand{\Arg}{\operatorname{Arg}}
+\renewcommand{\Re}{\operatorname{Re}}
+\renewcommand{\Im}{\operatorname{Im}}
+\newcommand{\R}{\mathbb R}
+\newcommand{\C}{\mathbb C}
+\newcommand{\Z}{\mathbb Z}
+
 \newcommand{\nosize}[1]{\raisebox{0pt}[0pt][0pt]{\makebox[0pt]{#1}}}
 \newcommand{\nosizep}[1]{\makebox[0pt]{#1}}
 
@@ -60,7 +70,8 @@
 \begin{longtable}{lll}
 	\makecell[l]
 	{
-		Principal Argument
+		Principal \\
+		Argument
 	} &
 	\makecell[l]
 	{
@@ -74,7 +85,8 @@
 
 	\makecell[l]
 	{
-		Triangle Inequality 
+		Triangle \\
+		Inequality 
 	} &
 	\makecell[l]
 	{
@@ -91,7 +103,8 @@
 
 	\makecell[l]
 	{
-		Limits to Infinity
+		Limits to \\
+		Infinity
 	} &
 	\makecell[l]
 	{
@@ -109,7 +122,8 @@
 
 	\makecell[l]
 	{
-		Cauchy-Riemann
+		Cauchy-\\
+		Riemann
 	} &
 	\makecell[l]
 	{
@@ -137,7 +151,8 @@
 
 	\makecell[l]
 	{
-		Harmonic Check
+		Harmonic \\
+		Check
 	} &
 	\makecell[l]
 	{
@@ -158,7 +173,7 @@
 
 	\makecell[l]
 	{
-		Exponential Function 
+		Exponential
 	} &
 	\makecell[l]
 	{
@@ -172,7 +187,7 @@
 
 	\makecell[l]
 	{
-		Power Function 
+		Power
 	} &
 	\makecell[l]
 	{
@@ -186,21 +201,23 @@
 
 	\makecell[l]
 	{
-		Complex Log 
+		Log 
 	} &
 	\makecell[l]
 	{
 		$
-		\log(z) = \ln  \left| z \right| + i \arg(z)
+		\Log(z) = \ln  \left| z \right| + i \arg(z)
 		$
 	} &
 	\textit{\makecell[l]
 		{
 			$-\pi < \text{Arg}(z) < \pi$
 	}} \\
+
 	\makecell[l]
 	{
-		Trig Functions
+		Trig \\
+		Functions
 	} &
 	\makecell[l]
 	{
@@ -208,13 +225,51 @@
 		\begin{cases}
 			\sin z = \cfrac{1}{2i}  \left( e^{iz} - e^{-iz} \right) \\
 			\cos z = \cfrac{1}{2}  \left( e^{iz} + e^{-iz} \right) \\
+			\sinh z = \cfrac{1}{2}  \left( e^{z} - z^{-z} \right) = -i \sin\left(iz \right) \\
+			\cosh z = \cfrac{1}{2}  \left( e^z + e^{-z} \right) = \cos\left(iz \right) \\
 		\end{cases}
 		$
 	} &
 	\textit{\makecell[l]{
-		All the familiar identities apply, \\
-		but range is no longer
+			Range of $ \sin$ and $\cos$ \\
+			is not longer
 		$ \pm 1 $ .
+	}} \\
+
+	\makecell[l]
+	{
+		Zakarian \\
+		Identities
+	} &
+	\makecell[l]
+	{
+		$
+		\begin{cases}
+			\sin z = \cfrac{1}{2i}  \left( e^{iz}-e^{-iz} \right) = \\
+				\quad=\sin x \cosh y + i \cos x \sinh y \\
+			\cos z = \cfrac{1}{2}  \left( e^{iz} + e^{-iz} \right) = \\
+				\quad = \cos x \cosh y - i \sin x \sinh y \\
+		\end{cases}
+		$
+	} &
+	\textit{\makecell[l]{
+	}} \\
+
+	\makecell[l]
+	{
+		Highschool \\
+		Identities
+	} &
+	\makecell[l]
+	{
+		$
+		\begin{cases}
+			\sin\left(z+w \right) =\sin z \cos w + \cos z \sin w \\
+			\cos\left(z+w \right) = \cos z \cos w - \sin z \sin w \\
+		\end{cases}
+		$
+	} &
+	\textit{\makecell[l]{
 	}} \\
 
 	\makecell[l]
