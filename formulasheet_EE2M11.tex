@@ -67,6 +67,8 @@
 %\end{center}
 %\pagebreak
 
+\section{Part 1}
+
 \begin{longtable}{lll}
 	\makecell[l]
 	{
@@ -294,7 +296,7 @@
 	\makecell[l]
 	{
 		$
-			\cfrac{2\pi i}{n!}  f^n(z_0) =
+		\cfrac{2\pi i}{n!}  f^{[n]}(z_0) =
 			\int\limits_C \cfrac{f(z)}{(z-z_0)^{n+1}} 
 		$
 	} &
@@ -317,13 +319,21 @@
 	\textit{\makecell[l]
 		{
 	}} \\
+\end{longtable}
 
+\section{Part 2}
+\begin{longtable}{lll}
 	\makecell[l]
 	{
+		Taylor Theorem
 	} &
 	\makecell[l]
 	{
 		$
+		\begin{cases}
+			f(z) = \sum_{n=0}^{\infty}a_n(z-z_0)^n \\
+			a_n = \cfrac{f^{[n]}(z_0)}{n!} \\
+		\end{cases}
 		$
 	} &
 	\textit{\makecell[l]
@@ -332,15 +342,20 @@
 
 	\makecell[l]
 	{
+		Binomial \\
+		Expansion
 	} &
 	\makecell[l]
 	{
 		$
+		z^n + n = z_1 \cdot z_2 \cdot z_3 \cdot...
 		$
 	} &
-	\textit{\makecell[l]
+	\makecell[l]
 		{
-	}} \\
+		$ z_1 $ represents the\\
+		$n$th root of $ \sqrt[n]{z^n} $ 
+	} \\
 
 	\makecell[l]
 	{
@@ -378,6 +393,7 @@
 		{
 	}} \\
 \end{longtable}
+
 
 \begin{tabular}{c|ccccc}
 	&
